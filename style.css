@@ -1,0 +1,274 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #100E17;
+    color:#E8E7E8;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.4);
+ }
+
+ /* smooth navbar transition https://www.youtube.com/watch?v=5ke7qaHxON0*/
+
+/* aparecer sempre logo após o h1*/
+
+.welcome {
+    margin-top: 25%;
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.main {
+    text-align: center;
+    padding-top: 12%;
+}
+
+img {
+    margin-top: 30px;
+}
+h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: piscar 1.5s infinite;
+    color: #D49D42;
+}
+
+/*Piscar "|" */
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.avatar {
+    width: 400px;
+    border-radius:2px;
+    transform: rotateY(180deg);
+    transform: rotate(10deg);
+    /*z-index: 1;*/
+}
+
+.img3 {
+    transform: rotate(10deg);
+}
+
+
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+
+/*LEFT ICONS*/
+
+.icons {
+    position: fixed;
+    top: 50px;
+    right:0%;
+    width:210px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+
+}
+
+.icons a {
+    padding:5px;
+    font-size:13px;
+    background-color: #100E17;
+    margin:2px;
+    text-align: left;
+    border-radius: 25px 0px 0px 25px;
+    transform: translate(141px, 0px);
+    transition: all 0.5s;
+}
+
+.icons a:hover {
+    transform: translate(0px ,0px);
+    background-color:#FFC107;
+    color: #100E17
+}
+
+
+.icons a i {
+    margin-right: 25px;
+    background-color:#FFC107;
+    height: 40px;
+    width: 40px;
+    color: #100E17;
+    text-align:center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s;
+   
+}
+
+.icons a:hover i {
+    transform: rotate(360deg);
+}
+
+
+/*ABOUT ME*/
+
+[data-anime] {
+    opacity: 0;
+    transition: 0.7s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px,0,0);
+}
+
+[data-anime].animate {
+    opacity:1;
+    transform:translate3d(0px, 0px, 0px);
+}
+
+
+.aboutme {
+    margin-top: 200px;
+    text-align: middle;
+}
+
+.img2 {
+    margin-top: -40px;
+    width: 400px;
+}
+
+.aboutme ul {
+    margin:0px;
+    padding:0px;
+}
+
+.aboutme ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top:8px;
+    margin-top:10px;
+
+}
+
+.languages {
+    border: 1.5px solid #FFC107;
+    border-radius:5px;
+    padding: 6px 6px;
+    word-spacing: 2px;    
+}
+
+.languages:hover {
+    background-color:#FFC107;
+    color: #100E17;
+}
+
+.cv {
+    margin-top:40px;
+    border-radius: 30px;
+    font-size: 15px;
+    width: 200px;
+
+}
+
+
+/*EDUCATION WORK EXPERIENCE */
+
+.card {
+    margin-top: 70px;
+    background-color:#E8E7E8;
+    color: #1E1E25;
+}
+
+.educ-work {
+    padding-top:200px;
+}
+
+.card {
+    border: none;
+}
+
+
+
+.card-body {
+    background-color:#1E1E25;
+    color: #E8E7E8;
+    box-shadow: 5px 5px 5px 5px rgb(10, 8, 14, 0.3);  
+    border-radius:3px;  
+}
+
+.yellow {
+    color: #FFC107;
+}
+
+
+form {
+    padding-top:20px; box-shadow: 5px 5px 5px 5px rgb(10, 8, 14, 0.3);
+    
+}
+
+
+.img3 {
+    transform: rotate(20deg);
+    width: 20px;
+    position:absolute;
+    
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    height: 150px; 
+    padding-top: 100px; 
+    font-family:'Roboto Mono', monospace;
+}
+
+.fa-heart {
+    color: #FFC107;
+}
+
+/*Thanks.html*/
+
+.img4 {
+    width: 50px;
+    position: absolute;
+    padding-top: 200px;
+    z-index:200;
+    transform: rotate(-20deg);
+    /*transform: rotate(-10deg);*/
+}
+
+.byemessage {
+    min-height: 100%;
+}
+
+.m {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.footerth {
+    position:sticky; 
+    top:100%;
+}
